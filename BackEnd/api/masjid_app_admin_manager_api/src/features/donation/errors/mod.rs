@@ -1,0 +1,3 @@
+pub mod donation_history_admin_repository_errors;
+pub mod donation_history_dto_mapping_error;
+pub mod donation_history_service_errors;

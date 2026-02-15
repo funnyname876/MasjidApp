@@ -12,6 +12,11 @@ pub enum Recurrence {
     Monthly,
     Annually,
 }
+impl Default for Recurrence {
+    fn default() -> Self {
+        Self::OneOff
+    }
+}
 impl Display for Recurrence {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let recurrence = match self {
